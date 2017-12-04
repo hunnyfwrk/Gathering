@@ -1,0 +1,109 @@
+<!-- <ion-header class="main_header">
+  <ion-navbar>
+
+      <ion-buttons class="pick0" start left>
+         
+              <img src="assets/image/order.png">
+          
+        </ion-buttons>
+
+    <ion-title>Track My Order</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only class="cancel">
+       Cancel
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header> -->
+<ion-header class="main_header">
+    <ion-navbar color="navyb" text="center" hideBackButton >
+     <ion-buttons start left>
+     <div class="picprf">
+        <img src="assets/image/order.png">
+     </div>
+    </ion-buttons>
+     <ion-title>Track My Order</ion-title>
+  <!--      <button ion-button menuToggle left color="lightgrey">
+        <ion-icon name="ios-arrow-back"></ion-icon>
+      </button> -->
+     
+      <ion-buttons end>
+          <button ion-button icon-only class="cancel">
+              Cancel
+             </button>
+      </ion-buttons>
+      
+    </ion-navbar>
+  </ion-header>
+
+<ion-content>
+
+  <div class="order">
+    <h6>order number</h6>
+    <p>#145678</p>
+  </div>
+
+  <div class="order_pagination" padding>
+    
+    <div class="box">
+        <ion-grid>
+            <ion-row>
+              <ion-col col-2><span class="circle circle1"></span></ion-col>
+              <ion-col col-3><div class="order-image"> <img src="assets/image/information.png"></div></ion-col>
+              <ion-col col-7>
+                <div class="content1">
+                <h5>Order Placed</h5>
+                <p>We have received your order.</p>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+
+          <ion-grid>
+              <ion-row>
+                <ion-col col-2><span class="circle circle2"></span></ion-col>
+                <ion-col col-3><div class="order-image"> <img src="assets/image/placed.png"></div></ion-col>
+                <ion-col col-7>
+                  <div class="content1">
+                  <h5>Order Confirmed</h5>
+                  <p>We have received your order.</p>
+                  </div>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+
+
+            <ion-grid>
+                <ion-row>
+                  <ion-col col-2><span class="circle abc circle3"></span></ion-col>
+                  <ion-col col-3><div class="order-image"> <img src="assets/image/placed.png"></div></ion-col>
+                  <ion-col col-7>
+                    <div class="content1 bbb">
+                    <h5>Order Processed</h5>
+                    <p>We have received your order.</p>
+                    </div>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+
+
+              <ion-grid>
+                  <ion-row>
+                    <ion-col col-2><span class="circle circle4"></span></ion-col>
+                    <ion-col col-3><div class="order-image"> <img src="assets/image/placed.png"></div></ion-col>
+                    <ion-col col-7>
+                      <div class="content1">
+                      <h5>Order Delivered</h5>
+                      <p>We have received your order.</p>
+                      </div>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+           
+           </div>
+  </div>
+
+</ion-content>

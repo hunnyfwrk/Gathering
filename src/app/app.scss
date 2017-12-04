@@ -1,0 +1,220 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+@font-face{
+    font-family: Raleway-Regular;
+    src:url('../assets/font/raleway-regular.woff2');
+}
+@font-face{
+    font-family: Raleway-Medium;
+    src:url('../assets/font/raleway-medium.woff2');
+}
+@font-face{
+    font-family: Raleway-Bold;
+    src:url('../assets/font/raleway-bold.woff2');
+}
+h2,h1,h3,h4,h5,h6{
+    font-family: Raleway-Bold;
+}
+p{
+    font-family: Raleway-Regular;
+}
+.button, button{
+    font-family: Raleway-Medium;
+}
+
+body{
+    font-family: Raleway !important;
+}
+.button-ios.activated,.button-md.activated{
+    background:#e7cc85;
+}
+.toolbar-ios ion-title,.toolbar-md ion-title {
+    padding: 0;
+}
+.back-button{
+    color: #d7b359 !important;
+}
+.tabs-ios .tab-button-icon,.tabs-md .tab-button-icon {
+    color: #d7b359;
+}
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon,
+.tabs-md .tab-button[aria-selected=true] .tab-button-icon {
+    color: #d7b359;
+}
+.tabs-ios .tabbar,.tabs-md .tabbar{
+    box-shadow:0 0px 11px -2px #616161;
+    background: rgba(255, 255, 255, 0.76);
+    border: none;
+}
+.button-md:hover:not(.disable-hover) {
+    background-color: #d7b359 !important;
+}
+
+
+/***************Header**************/
+
+.main_header .toolbar-background-ios,
+.main_header .toolbar-background-md{
+    background: rgba(255, 255, 255, 0.76);
+}
+.back {
+    background: transparent;
+    color: #d7b359;
+    height: 26px;
+    font-size: 20px;
+    padding: 0;
+    border: none;
+    width: 26px;
+    float: left;
+    box-shadow: none;
+    text-transform: capitalize;
+}
+.tabs-md .tab-button{
+    min-height: 41px;
+}
+
+.picker-ios .picker-opt{
+    color: #d7b359;
+}
+.picker-button {
+    color: #d7b359 !important;
+    font-weight: normal !important;
+}
+.back.activated {
+    background: transparent;
+}
+.main_header .toolbar-title-ios{
+padding: 0 45px;
+}
+.main_header .toolbar-title-md,.main_header .toolbar-title-ios {
+    font-size: 1.7rem;
+font-family: Raleway-Bold;
+color: #d7b359;
+pointer-events: auto;
+}
+
+.main_header .toolbar-title-md{
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+// .main_header .toolbar-md ion-title {
+//     padding: 0px;
+//     width: 100%;
+//     float: left;
+// }
+.main_header{
+    box-shadow: 0 -5px 12px 4px #616161;
+    background: #fff;
+}
+.main_header .header-ios .toolbar-background-ios,
+.main_header .header-md .toolbar-background-md{
+    border:none;
+}
+.main_header .toolbar-ios,.main_header .toolbar-md {
+    padding: 4px 15px;
+}
+.footerbar .button {
+    background: rgba(255, 255, 255, 0.76);
+    color: #d7b359;
+    text-align: center;
+    width: 100%;
+    float: left;
+    margin: 0;
+    box-shadow: 0 0px 14px 1px #616161;
+    border-radius: 0;
+    font-family: Raleway-Regular;
+}
+
+
+/*************Header Close*************/
+
+.item-ios,.item-md{
+    font-size: 15px;
+}
+
+.list-md .item-input.item-input-has-focus:last-child, .list-md .item-input.input-has-focus:last-child{
+    border:1px solid #d7b359;
+    box-shadow: none;
+}
+.list-md .item-block .item-inner {
+    border:none;
+}
+
+
+.alert-ios [aria-checked="true"] .alert-radio-label,
+.alert-md [aria-checked="true"] .alert-radio-label{
+    color: #d7b359 !important;
+}
+.alert-ios .alert-button,
+.alert-md .alert-button{
+    color: #d7b359 !important;
+}
+.alert-radio-inner,.alert-md [aria-checked=true] .alert-radio-icon,.alert-md .alert-radio-icon {
+    display: none !important;
+}
+.alert-tappable .button-inner:last-child {
+    border-bottom:none !important;
+}
+.alert-md .alert-head,.alert-ios .alert-head {
+    padding: 10px 24px 10px;
+}
+.alert-md .alert-title,.alert-ios .alert-title,.picker-md .picker-opt.picker-opt-selected,.picker-ios .picker-opt.picker-opt-selected{
+    color: #d7b359 !important;
+}
+.alert-md .alert-button-group,.alert-ios .alert-button-group{
+    padding: 5px 8px 5px 24px;
+}
+.alert-md .alert-tappable,.alert-ios .alert-tappable {
+    height: 3.4rem;
+    min-height: 3.4rem;
+    text-transform: capitalize;
+    border-bottom: 1px solid #ddd;
+}
+.alert-md .alert-title, .alert-ios .alert-title {
+    color: #d7b359 !important;
+    font-size: 17px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #d7b359;
+    opacity: 1;
+}
+.searchbar-md .searchbar-input,
+.searchbar-ios .searchbar-input {
+    padding: 3px 15px 3px 55px;
+    border-radius: 3px;
+    background-position: left 8px center;
+    height: auto;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: #141414;
+    background-color: rgba(222, 221, 221, 0.67);
+    box-shadow:0 1px 7px -2px #000;
+    border: 1px solid #ddd;
+}
+.back-button-text-ios{
+    display: none;
+}
+.back-button-md {
+    margin: 0 0px;
+    min-width: 34px;
+    padding: 0;
+}

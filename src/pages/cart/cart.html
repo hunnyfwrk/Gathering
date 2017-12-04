@@ -1,0 +1,60 @@
+<ion-header class="main_header">
+    <ion-navbar>
+        <ion-title>Cart</ion-title>
+
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding style="background: url(assets/image/bg.jpg);background-size: cover;background-repeat: no-repeat;">
+
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+  
+    <div class="wishlist_box">
+        <div class="wbox" *ngFor="let p of products; let i = index" [attr.data-index]='i'>
+          
+            <ion-thumbnail item-start>
+                <img [src]="products[i].product_info.image">
+            </ion-thumbnail>
+            <!--{{product.product_info | json}}-->
+            <div class="content11">
+                <h2>{{products[i].product_info.name}}</h2>
+                <p style="color:#dab966;margin: 4px 0 4px 0 !important;width:44%;float:left">Price: {{products[i].product_info.price}}SR</p>
+                <span item-end style="font-size: 13px;margin:4px 0;color: #d7b359;width: 36%;float:right;text-align: right;">{{products[i].product_info.price}}SR x {{products[i].quantity}}</span>
+                <h6 style="margin:0 0 10px 0;">{{products[i].product_info.created_at | date}}</h6>
+
+
+                <div class="plus_min">
+                    <span class="min">
+                        <button ion-button small (click)="decQty(i,products[i]._id)"><ion-icon ios="ios-remove" md="md-remove" style="font-size:20px;"></ion-icon></button>
+                    </span>
+                    <span class="quantity_input">
+                        <ion-input type="number" min="1" placeholder="1"  [value]="products[i].quantity"></ion-input>
+                    </span>
+                    <span class="plus">
+                        <button ion-button small (click)="incQty(i,products[i]._id)"><ion-icon ios="ios-add" md="md-add" style="font-size:20px;" ></ion-icon></button>
+                    </span>
+                </div>
+            </div>
+            <button class="close" clear (click)="removeItem(products[i]._id)"><ion-icon ios="ios-close-circle" md="md-close-circle"></ion-icon></button>
+        </div>
+        <div class="wbox" *ngIf="noProducts == true" style="text-align:center"> Your cart is empty. </div>
+    </div>
+    <div style="width:100%;float:left;height: 4vh;"></div>
+
+    <div class="center1" *ngIf="noProducts != true">
+        <div class="last_btn">
+            <ion-grid style="padding:0;">
+                <ion-row>
+                    <ion-col col-6 style="padding:0;"><button clear ion-button (click)="saveCart()">Done</button></ion-col>
+                    <ion-col col-6 style="padding:0;"><button clear ion-button class="rr">SR {{total}}</button></ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+    </div>
+
+    <div style="width:100%;float:left;height: 4vh;"></div>
+
+</ion-content>

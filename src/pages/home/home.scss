@@ -1,0 +1,81 @@
+page-home {
+
+    .main_header .toolbar-title-md{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+    .boxs {
+        width: 100%;
+        float: left;
+        background:rgba(146, 138, 138, 0.05);
+        margin-bottom: 6px;
+        min-height:19.8vh;
+        position: relative;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+    }
+    ion-slide{
+        height: 19.2vh !important;
+    }
+    .boxs span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 0;
+        height: 18px;
+        width: 68%;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 600;
+        color: #fff;
+        font-family: Raleway-Bold;
+        z-index: 999;
+    }
+    .date_format .item,.date_format .item .item-inner {
+        padding: 0;
+        background: transparent;
+        min-height: 34px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+    }
+    
+    .date_format .item .datetime {
+        width: 100%;
+        text-align: center;
+        float: left;
+        padding: 5px;
+        border: none !important;
+        color: #fff;
+    }
+    .boxs span form{
+        width:82%;
+        float: none;
+        display: block;
+        margin: auto;
+        margin-top: 5px;
+    }
+    .boxs span form input{
+        width:82%;
+        float: none;
+        display: block;
+        margin: auto;
+        color: #111;
+        border-radius: 3px;
+        text-align: center;
+        border: 1px solid #111;
+        padding:3px;
+        font-size: 14px;
+    }
+    .overlay {
+    position: absolute;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.36);
+    z-index: 999;
+    width: 100%;
+}
+
+}

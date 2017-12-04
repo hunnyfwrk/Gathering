@@ -1,0 +1,109 @@
+page-viewall {
+
+    .detail {
+        background: rgba(146, 138, 138, 0.05);
+        border: 1px solid #d7b359;
+        padding: 15px;
+        border-radius: 4px;
+        float: left;
+        width: 100%;
+        padding-left: 60px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .item-cover {
+        left: 5px;
+        top: 7px;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        cursor: pointer;
+        padding: 5px;
+    }
+    .item-cover-ios{
+        border-radius: 50px;
+        border: 1px solid #d7b359;
+        padding: 5px;
+    }
+    .detail h3 {
+        width: 66%;
+        float: left;
+        color: #d7b359;
+        margin: 0;
+        font-size: 18px;
+        line-height: 44px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    .detail p {
+        width: 100%;
+        float: left;
+        margin-bottom: 5px !important;
+        margin: 0;
+        font-size: 14px;
+        color: #41444b;
+    }
+    .detail .button {
+        width: auto;
+        float: right;
+        height: 30px;
+        font-size: 14px;
+        background: #d7b359;
+        color: #fff;
+        text-transform: capitalize;
+        box-shadow: none;
+        border-radius: 4px;
+    }
+    
+    .detail .item {
+        width: 40px;
+        position: absolute;
+        left: 11px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 40px;
+        padding: 0;
+        background: transparent;
+    }
+
+    .detail .item .item-inner {
+        padding: 0;
+        border: none;
+    }
+    
+    .detail .item .item-inner .radio {
+        padding: 0 !important;
+        margin: 12px;
+    }
+    .detail .radio-ios .radio-checked .radio-inner{
+        border-color: #d7b359;
+    }
+    .detail .radio-md .radio-checked {
+        border-color: #d7b359;
+    }
+    .detail .radio-md .radio-inner{
+        background-color: #d7b359;
+    }
+    .detail .radio-md .radio-icon{
+        border-color: #d7b359;
+    }
+    .button0{
+        width: 100%;
+        float:left;
+    }
+    .button0 .button{
+        width: 100%;
+        float: left;
+        margin-bottom: 15px;
+        background: #d7b359;
+        height: 45px;
+        text-transform: capitalize;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        font-size: 17px;
+        border-radius: 4px;
+    }
+
+}

@@ -1,0 +1,69 @@
+page-payment {
+
+    .payment ion-item.item.item-block.item-ios.item-radio,
+    .payment ion-item.item.item-block.item-md.item-radio{
+        background: rgba(146, 138, 138, 0.05);
+        border: 1px solid #d7b359;
+        padding: 0;
+        border-radius: 4px;
+        float: left;
+        width: 100%;
+        position: relative;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    
+    .payment .item-radio .item-inner {
+        border: none;
+    }
+    .payment ion-label{
+        color: #d7b359;
+    }
+    .radio-ios .radio-checked .radio-inner{
+        border-color: #d7b359;
+    }
+    .item-radio-checked.item-ios ion-label,
+    .item-radio-checked.item-md ion-label {
+        color: #d7b359;
+    }
+    .radio-md .radio-checked {
+        border-color: #d7b359;
+    }
+    .radio-md .radio-inner{
+        background-color: #d7b359;
+    }
+    .radio-md .radio-icon{
+        border-color: #d7b359;
+    }
+    .icn {
+        position: absolute;
+        left: 20px;
+        font-size: 22px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 21px;
+    }
+    .payment .label {
+        margin:0 0px 0 60px !important;
+        float: left;
+        text-align: left;
+    }
+    .button0{
+        width: 100%;
+        float:left;
+    }
+    .button0 .button{
+        width: 100%;
+        float: left;
+        margin-bottom: 15px;
+        background: #d7b359;
+        height: 45px;
+        text-transform: capitalize;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        font-size: 17px;
+        border-radius: 4px;
+    }
+
+}

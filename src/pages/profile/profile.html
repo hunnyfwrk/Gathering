@@ -1,0 +1,83 @@
+<ion-header class="main_header">
+  <ion-navbar>
+    <ion-title>{{ 'myaccount' | translate}}</ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding style="background: url(assets/image/bg.jpg);background-size: cover;background-repeat: no-repeat;">
+
+  <div class="email_box">
+
+    <h2>Hello Beautiful {{this?.firstname}}</h2>
+    <form #signinForm="ngForm" novalidate>
+      <ion-list>
+
+        <div class="icn00">
+          <ion-item>
+            <ion-input type="text" placeholder="Lovely Name" [(ngModel)]="data.name" pattern='[a-zA-Z ]*' name="name" #name="ngModel"
+              required></ion-input>
+          </ion-item>
+          <ion-icon ios="ios-create" md="md-create" class="edit"></ion-icon>
+          <ion-label color="danger">
+            <div *ngIf="name.errors && (name.dirty || name.touched)">
+              <div [hidden]="!name.errors.required">
+                Name is required
+              </div>
+              <div [hidden]="!name.errors.pattern">
+                Invalid name
+              </div>
+            </div>
+          </ion-label>
+        </div>
+
+        <div class="icn00">
+          <ion-item>
+            <ion-input type="text" placeholder="Email" [(ngModel)]="data.email" required pattern='^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$'
+              name='email' #email="ngModel" [readonly]="true">
+              <ion-icon ios="ios-create" md="md-create" class="edit"></ion-icon>
+            </ion-input>
+          </ion-item>
+          <!--<ion-icon ios="ios-create" md="md-create" class="edit"></ion-icon>-->
+        </div>
+
+        <div class="icn00">
+          <ion-item>
+            <ion-input type="text" placeholder="Phone" [(ngModel)]="data.phone" name="phone" pattern='[0-9]+' maxlength='10' #phone="ngModel"
+              >
+              <ion-icon ios="ios-create" md="md-create" class="edit"></ion-icon>
+            </ion-input>
+          </ion-item>
+          <ion-icon ios="ios-create" md="md-create" class="edit"></ion-icon>
+          <ion-label color="danger">
+            <div *ngIf="phone.errors && (phone.dirty || phone.touched)">
+              <div [hidden]="!phone.errors.required">
+                Phone Number is required
+              </div>
+              <div [hidden]="!phone.errors.pattern">
+                Invalid phone number
+              </div>
+            </div>
+          </ion-label>
+        </div>
+        <div class="icn00">
+          <ion-item>
+            <ion-label style="margin-bottom: 0px !important;margin-top: 0;">Gender</ion-label>
+            <ion-select [(ngModel)]="data.gender" name="gender" #gender="ngModel">
+              <!--[ngModelOptions]="{standalone: true}"-->
+              <ion-option value="male">Male</ion-option>
+              <ion-option value="female">Female</ion-option>
+            </ion-select>
+          </ion-item>
+        </div>
+      </ion-list>
+
+      <button ion-button type='submit' (click)="update(signinForm)" [disabled]='!signinForm.valid' class="sve"> Save</button>
+
+    </form>
+  </div>
+
+
+
+</ion-content>

@@ -1,0 +1,174 @@
+page-orderreview {
+
+.event_time {
+    width: 100%;
+    float: left;
+    border-top: 1px solid #d7b359;
+    margin-top: 5px;
+}
+    .date_time {
+        background: rgba(146, 138, 138, 0.05);
+        border-top: 1px solid #d7b359;
+        border-bottom: 1px solid #d7b359;
+        padding: 10px 15px;
+        border-radius: 0;
+        float: left;
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .time,.event {
+        width: 100%;
+        float: left;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .time h5,.event h5 {
+        width: 100%;
+        float: left;
+        font-size: 15px;
+        text-transform: capitalize;
+        font-weight: normal;
+        font-family: Raleway-Medium;
+        color: #d7b359;
+        margin: 5px 0;
+    }
+    
+    .time p,.event p {
+        width: 100%;
+        float: left;
+        margin-bottom: 4px !important;
+        margin: 0;
+        font-size: 15px;
+        color: #41444b;
+    }
+    .wishlist_box .list-ios > .item-block:first-child,.wishlist_box .list-ios .item-block .item-inner,.wishlist_box .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block,
+    .wishlist_box .list-md > .item-block:first-child,.wishlist_box .list-md .item-block .item-inner,.wishlist_box .list-md > .item-block:last-child, .list-md > .item-wrapper:last-child .item-block {
+        border-top: none;
+        border-bottom: none;
+    }
+    .wishlist_box ion-thumbnail {
+        margin: 8px 10px 8px 0 !important;
+        width: 87px;
+        height: 120px;
+        overflow: hidden;
+        min-height: 56px;
+    }
+    
+    .wishlist_box ion-thumbnail img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .wishlist_box {
+        width: 100%;
+        float: left;
+    }
+    
+    .wishlist_box .item.item-block.item-ios,
+    .wishlist_box .item.item-block.item-md {
+        background: rgba(146, 138, 138, 0.05);
+        border-radius: 0px;
+        border-top: 1px solid #d7b359 !important;
+        border-bottom: 1px solid #d7b359 !important;
+        padding-left: 15px;
+    }
+    .price{
+        margin: 0px !important;
+        color: #d7b359;
+    }
+    .wishlist_box .label h2 {
+        font-weight: 500;
+        color: #d7b359;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    
+    .wishlist_box .label p {
+        white-space: normal;
+        font-size: 13px;
+    }
+    .price{
+        width: auto;
+        float: right;
+        margin: 2px 0;
+        font-size: 15px;
+        font-family: Raleway-Bold;
+    }
+    .item11{
+        width: auto;
+        float: left;
+        margin: 2px 0;
+        font-size: 15px;
+    }
+    .wishlist_box .label span {
+        width: 100%;
+        float: left;
+        color: green;
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+    .wishlist_box .list{
+        margin-bottom: 0;
+    }
+    .heading {
+        width: 100%;
+        float: left;
+        padding: 5px 16px;
+    }
+    
+    .heading h2 {
+        width: 100%;
+        float: left;
+        color: #d7b359;
+        font-size: 20px;
+        margin: 5px 0;
+        padding: 0;
+        font-family: Raleway-Medium;
+    }
+    .event_address {
+        background: rgba(146, 138, 138, 0.05);
+        border-top: 1px solid #d7b359;
+        border-bottom: 1px solid #d7b359;
+        padding: 10px 15px;
+        border-radius: 0;
+        float: left;
+        width: 100%;
+    }
+    
+    .event_address h3 {
+        width: 100%;
+        float: left;
+        color: #d7b359;
+        margin-bottom: 5px;
+        font-size: 18px;
+        margin-top: 0;
+    }
+    
+    .event_address p {
+        float: left;
+        width: 100%;
+        padding: 0;
+        margin: 0 0 5px 0;
+        color: #41444b;
+    }
+    .button0{
+        width: 100%;
+        float:left;
+        margin-top: 5px;
+    }
+    .button0 .button{
+        width: 100%;
+        float: left;
+        margin-bottom: 15px;
+        background: #d7b359;
+        height: 45px;
+        text-transform: capitalize;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        font-size: 17px;
+        border-radius: 4px;
+    }
+
+}

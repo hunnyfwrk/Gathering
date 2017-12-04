@@ -1,0 +1,67 @@
+<ion-header class="main_header">
+    <ion-navbar>
+      <ion-title>{{ 'categories' | translate }}</ion-title>
+      
+    </ion-navbar>
+  </ion-header>
+  
+  
+  <ion-content padding style="background: url(assets/image/bg.jpg);background-size: cover;background-repeat: no-repeat;">
+
+    <div class="location">
+        
+      <!-- <ion-list class="select01">
+        <ion-item>
+          <ion-label style="color:#d7b359;text-align:right;">Sort By:</ion-label>
+          <ion-select [(ngModel)]="gaming" class="gameing">
+            <ion-option value="nes">services</ion-option>
+            <ion-option value="n64">services 2</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-list> -->
+
+      <div padding>
+        <ion-segment [(ngModel)]="pet" >
+         
+          <ion-segment-button value="puppies" (click)="switch();">
+            {{ 'Services' | translate }}
+          </ion-segment-button>
+
+           <ion-segment-button value="kittens" (click)="switch();">
+            {{ 'Stores' | translate }}
+          </ion-segment-button>
+          
+        </ion-segment>
+      </div>
+      
+      <div [ngSwitch]="pet">
+      <div class="list_box" *ngSwitchCase="'kittens'">
+        <ion-list>
+            <button  *ngFor='let category of stores' ion-item (click)="servicepage(category._id,category.org_name)">
+             <img [src]="category.image" class="service_icn"> 
+              <span *ngIf='lang == "en"'>  {{category.org_name}}  </span>
+               <span *ngIf='lang == "ar"'>  {{category.org_name}}  </span>
+             <ion-icon ios="ios-arrow-forward" md="md-arrow-forward" class="angle1"></ion-icon>
+            </button>  
+        </ion-list>
+      </div>
+      <div class="list_box" *ngSwitchCase="'puppies'">
+          <ion-list>
+           <ion-list>
+            <button  *ngFor='let category of services' ion-item (click)="subcategorypage(category._id,category.name,category.ar_name,category.type)">
+             <img [src]="category.image" class="service_icn"> 
+              <span *ngIf='lang == "en"'>  {{category.name}}  </span>
+               <span *ngIf='lang == "ar"'>  {{category.ar_name}}  </span>
+             <ion-icon ios="ios-arrow-forward" md="md-arrow-forward" class="angle1"></ion-icon>
+            </button>  
+        </ion-list> 
+        </ion-list>
+        </div>
+      </div>
+      
+
+</div>
+        
+
+
+  </ion-content>

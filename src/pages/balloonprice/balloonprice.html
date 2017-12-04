@@ -1,0 +1,75 @@
+<ion-header class="main_header">
+    <ion-navbar>
+  
+    <ion-title *ngIf='lang == "en"'>{{subcategory_name}}</ion-title>
+    <ion-title *ngIf='lang == "ar"'>{{subcategory_ar_name}}</ion-title>
+      
+    </ion-navbar>
+  </ion-header>
+  
+  
+  <ion-content padding style="background: url(assets/image/bg.jpg);background-size: cover;background-repeat: no-repeat;">
+  
+    <ion-grid style="padding:0px;">
+        <ion-row>
+          <ion-col col-6  *ngFor='let prods of products'>
+            <!--(click)="balloondetail()"-->
+            <div class="price_box">
+              <img [src]="prods.image" (click)="balloondetail(prods._id)">
+              <ion-icon ios="ios-heart" md="md-heart" class="heart1" (click)="addtoWish(prods._id)"></ion-icon>
+            </div>
+
+            <div class="content1">
+              <h3 *ngIf='lang == "en"'>{{prods.name}}</h3>
+              <h3 *ngIf='lang == "ar"'>{{prods.ar_name}}</h3>
+              <span>{{prods.vendorname}}</span>
+              <h4>SR {{prods.price}}</h4>
+            </div>
+          </ion-col>
+
+          <!--<ion-col col-6>
+              <div class="price_box">
+                  <img src="assets/image/2.jpg">
+                  <ion-icon ios="ios-heart-outline" md="md-heart-outline" class="heart"></ion-icon>
+                </div>
+
+                <div class="content1">
+                    <h3>Balloon 2</h3>
+                    <span>Vendor name</span>
+                    <h4>SR 200</h4>
+                  </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col col-6>
+              <div class="price_box">
+                <img src="assets/image/3.jpg">
+                <ion-icon ios="ios-heart-outline" md="md-heart-outline" class="heart"></ion-icon>
+              </div>
+  
+              <div class="content1">
+                <h3>Balloon 3</h3>
+                <span>Vendor name</span>
+                <h4>SR 750</h4>
+              </div>
+            </ion-col>
+  
+            <ion-col col-6>
+                <div class="price_box">
+                    <img src="assets/image/4.jpg">
+                    <ion-icon ios="ios-heart-outline" md="md-heart-outline" class="heart"></ion-icon>
+                  </div>
+  
+                  <div class="content1">
+                      <h3>Balloon 4</h3>
+                      <span>Vendor name</span>
+                      <h4>SR 520</h4>
+                    </div>
+            </ion-col>-->
+          </ion-row>
+
+      </ion-grid>
+
+
+</ion-content>

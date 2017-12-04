@@ -1,0 +1,186 @@
+page-order {
+ .scroll-content{
+     margin: 0px !important;
+ }   
+    .main_header {
+    position: relative !important;
+}
+
+ion-content{position: relative !important;}
+    .raiting {
+        width: 100%;
+        float: left;
+    }  
+    .raiting ul {
+        width: 100%;
+        float: left;
+        padding: 0;
+        list-style: none;
+        margin-bottom: 0;
+        margin-top: 5px;
+    }
+    .datetime-text {
+    text-align: center;
+}
+.datetime-md {
+    padding: 9px;
+    float: left;
+    width: 100%;
+}
+    .raiting ul li {
+        width: auto;
+        float: left;
+        margin-right: 3px;
+        font-size: 17px;
+        color: #dab966;
+    }
+    .order_box {
+        width: 100%;
+        float: left;
+    }
+    .back-button {
+    display: block;
+}
+    .image {
+        width: 50%;
+        float: left;
+        border-radius: 3px;
+        overflow: hidden;
+        height: 100px;
+        border: 2px solid #dab966;
+    }
+    
+    .image img {
+        width: 100%;
+        height: 100px;
+        float: left;
+    }
+    
+    .content1 {
+        width: 50%;
+        float: left;
+        padding-left: 20px;
+    }
+    
+    .content1 p {
+        width: 100%;
+        float: left;
+        margin: 0 0 5px 0;
+        color: #dab966;
+    }
+    
+    .content1 span {
+        width: 100%;
+        float: left;
+        font-weight: 600;
+        margin-top: 5px;
+        color: #dab966;
+    }
+    .input_box{
+        background: rgba(146, 138, 138, 0.05);
+        border: 1px solid #d7b359;
+        padding: 0 15px;
+        border-radius: 4px;
+        height: 37px;
+    }
+    .label1 {
+        width: 100%;
+        float: left;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 41px;
+        color: #dab966;
+    }
+    
+    .order_input {
+        width: 100%;
+        float: left;
+    }
+    .order_box {
+        width: 100%;
+        float: left;
+    }
+    .position{
+        position: relative;
+        padding-right: 30px;
+    }
+   .location {
+        color: #dab966;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: 1;
+        right: 8px;
+        font-size: 23px;
+        height: 22px;
+    }
+    .min {
+        width: 25%;
+        float: left;
+    }
+    
+    .quantity_input {
+        width: 50%;
+        float: left;
+        background: rgba(146, 138, 138, 0.05);
+        height: 35px;
+    }
+    
+    .plus {
+        width: 25%;
+        float: left;
+    }
+    
+    .min .button, .plus .button {
+        margin: 0;
+        width: 100%;
+        float: left;
+        border-radius: 0;
+        height: 35px;
+        background-color: #dab966;
+    }
+    
+    .quantity_input input.text-input.text-input-ios,.quantity_input input.text-input.text-input-md {
+        margin: 7px 0;
+        width: 100%;
+        text-align: center;
+        padding: 0 10px;
+        height: 21px;
+    }
+    .main_box{
+        border: 1px solid #dab966;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .language_btn {
+        width: 100%;
+        float: left;
+      }
+      .language_btn button {
+        width: 50%;
+        border-radius: 6px;
+        margin: auto;
+        float: none;
+        display: block;
+        margin-bottom: 14px;
+        background: #e7cc85;
+        color: #111;
+        text-transform: capitalize;
+        font-size: 16px;
+        height: 45px;
+        box-shadow: none,
+      }
+      .text-input-md,.text-input-ios {
+        margin: 9px 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .location_sss input{
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+
+}

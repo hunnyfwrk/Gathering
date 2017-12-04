@@ -1,0 +1,82 @@
+<ion-header class="main_header">
+  <ion-navbar>
+
+    <ion-title>Order Review</ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content style="background: url(assets/image/bg.jpg);background-size: cover;background-repeat: no-repeat;">
+
+  <div class="date_time">
+    <ion-grid style="padding:0px">
+      <ion-row>
+        <ion-col col-12 style="padding:0px">
+          <div class="time" style="border-right:none;">
+            <h5>Grand Total</h5>
+            <p>SR {{this?.total}}</p>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div class="wishlist_box">
+    <ion-list>
+      <ion-item *ngFor="let prod of products">
+
+        <ion-thumbnail item-start>
+          <img [src]="prod.product_info.image">
+        </ion-thumbnail>
+        <p class="item11">{{prod.product_info.name}} x {{prod.quantity}}</p>
+        <p class="price">SR {{prod.product_info.price}}</p>
+
+        <div class="event_time">
+          <ion-row>
+            <ion-col col-6 style="padding:0px">
+              <div class="event">
+                <h5>Event Date</h5>
+                <p>{{prod.date}}</p>
+              </div>
+            </ion-col>
+            <ion-col col-6 style="padding:0px">
+              <div class="time">
+                <h5>Time</h5>
+                <p>{{prod.time}}</p>
+              </div>
+            </ion-col>
+          </ion-row>
+           <ion-row>
+            <ion-col col-12 style="padding:0px">
+              <div class="event">
+                <h5>Event Address</h5>
+                <p>{{prod.location}}</p>
+              </div>
+            </ion-col>
+          </ion-row>
+        </div>
+
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div class="heading">
+    <h2>Billing Address</h2>
+  </div>
+  <div class="event_address" *ngIf="this?.addrs">
+    <h3>{{addrs.fname}} {{addrs.lname}}</h3>
+    <p>{{addrs.address}}</p>
+    <p>{{addrs.street}}, {{addrs.city}}, {{addrs.country}}</p>
+    <p>{{addrs.mobileno}}</p>
+  </div>
+
+  <div class="button0" padding>
+    <ion-grid style="padding:0px;">
+      <ion-row>
+        <ion-col col-12 style="padding-left:0px;"><button ion-button (click)="payment(addrs._id)">Payment</button></ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-content>

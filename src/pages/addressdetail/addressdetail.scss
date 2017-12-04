@@ -1,0 +1,46 @@
+page-addressdetail {
+
+    .button0{
+        width: 100%;
+        float:left;
+        margin-top: 20px;
+    }
+    .button0 .button{
+        width: 100%;
+        float: left;
+        margin-bottom: 15px;
+        background: #d7b359;
+        height: 45px;
+        text-transform: capitalize;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        font-size: 17px;
+        border-radius: 4px;
+    }
+    .scroll-content{
+        margin-top: 55px;
+        margin-bottom: 41px;
+    }
+    .detail {
+        background: rgba(146, 138, 138, 0.05);
+        border: 1px solid #d7b359;
+        padding:15px;
+        border-radius: 4px;
+        float: left;
+        width:100%;
+    }
+    .detail h3{
+        width: 100%;
+        float: left;
+        color: #d7b359;
+    }
+    .detail p {
+        width: 100%;
+        float: left;
+        margin-bottom: 5px !important;
+        margin: 0;
+        font-size: 15px;
+        color: #41444b;
+    }
+
+}

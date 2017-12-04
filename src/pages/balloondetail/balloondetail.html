@@ -1,0 +1,90 @@
+<ion-header class="main_header">
+    <ion-navbar *ngIf='this?.product'>
+  
+    <ion-title *ngIf='lang == "en"'>{{product.name}}</ion-title>
+    <ion-title *ngIf='lang == "ar"'>{{product.ar_name}}</ion-title>
+
+      
+      <ion-buttons end>
+        <button ion-button right class="back" (click)="addtoWish(product._id)">
+        <ion-icon ios="ios-heart-outline" md="md-heart-outline" item-end ></ion-icon>
+      </button>
+      </ion-buttons>
+      
+    </ion-navbar>
+  </ion-header>
+  
+  
+  <ion-content style="background: url(assets/image/bg.jpg);background-size: cover;background-repeat: no-repeat;">
+    <div class="detail_box">
+      <ion-slides pager>
+        
+          <ion-slide>
+            <img [src]="product.image">
+          </ion-slide>
+        
+          <ion-slide>
+            <img src="assets/image/1.jpg">
+          </ion-slide>
+        
+          <ion-slide>
+          <img src="assets/image/1.jpg">
+          </ion-slide>
+        
+        </ion-slides>
+    </div>
+
+    <div padding>
+    <div class="raiting">
+      <ul>
+        <li>
+          <ion-rating [numStars]="5" [readOnly]="true" value="{{rate}}" >
+</ion-rating>
+<!--(clicked)="starClicked($event)"-->
+          <!--<ion-icon ios="ios-star" md="md-star" *ngFor="let star of stars" name="{{star}}"></ion-icon>-->
+        </li>
+      </ul>
+      <!--<ul>
+        <li><ion-icon ios="ios-star" md="md-star"></ion-icon></li>
+        <li><ion-icon ios="ios-star" md="md-star"></ion-icon></li>
+        <li><ion-icon ios="ios-star-outline" md="md-star-outline"></ion-icon></li>
+        <li><ion-icon ios="ios-star-outline" md="md-star-outline"></ion-icon></li>
+        <li><ion-icon ios="ios-star-outline" md="md-star-outline"></ion-icon></li>
+      </ul>-->
+    </div>
+
+    <div class="accordion">
+      <ion-list class="custom_accordion">
+        <ion-item *ngFor="let d of diseases; let i=index" text-wrap (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}">
+          <h3>
+            {{d.title}}
+            <ion-icon style="float:right; margin: 0;" color="success" item-right [name]="isGroupShown(i) ? 'ios-arrow-up' : 'ios-arrow-down'"></ion-icon>
+          </h3>
+          <div class="acco_sec" *ngIf="isGroupShown(i)">
+            <p [innerHTML]='d.description'></p>
+          </div>
+        </ion-item>
+        </ion-list>
+    </div>
+
+   <div class="price">
+     <p>{{ 'vendor' | translate}} : {{product.vendorname}}</p>
+     <span>{{ 'price' | translate}} : {{product.price}}SR</span>
+   </div>
+
+   <div class="two_btn">
+      <ion-grid style="padding:0px;">
+          <ion-row>
+            <ion-col col-6><button ion-button  (click)="order1(product._id)">{{ 'ordernow' | translate}}</button></ion-col>
+            <ion-col col-6><button ion-button  (click)="chat()">{{ 'chat_with_us' | translate}}</button></ion-col>
+          </ion-row>
+        </ion-grid>
+
+        <div style="height:3vh;float:left;width:100%;"></div>
+
+   </div>
+
+</div>
+   
+
+</ion-content>

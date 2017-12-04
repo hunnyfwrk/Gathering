@@ -1,0 +1,80 @@
+page-location {
+
+    .main_header .title title-md{
+        width: 89% !important;
+    }
+
+    .list_box {
+        width: 100%;
+        float: left;
+        margin: 25px 0;
+    }
+    
+    .list_box .list .item:first-child {
+        border-top: none;
+    }
+    
+    .list_box .item {
+        margin-bottom: 5px;
+        background:rgba(146, 138, 138, 0.05);
+    }
+    .list_box .list-ios > .item-block:first-child,.list_box .list-ios > .item-block:last-child  {
+        border-top: 1px solid #d7b359 !important;
+        border-bottom: 1px solid #d7b359 !important;
+    }
+    .list_box .list{
+        margin-bottom: 0px !important;
+    }
+    .list_box .label{
+        color: #d7b359;
+    }
+    .list_box .item {
+        border: 1px solid #d7b359 !important;
+        border-radius: 3px;
+        font-size: 15px;
+    }
+    .list-md .item-block .item-inner{
+        border: none;
+    }
+    .list_box .list-ios .item-block .item-inner{
+        border-bottom: none;
+    }
+    .item-ios[detail-push] .item-inner, button.item-ios:not([detail-none]) .item-inner, a.item-ios:not([detail-none]) .item-inner {
+        background-image: none;
+    }
+    .angle1 {
+        position: absolute;
+        right: 10px;
+        font-size: 24px;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 22px;
+    }
+    .location span {
+        width: 50%;
+        float: none;
+        margin: auto;
+        display: block;
+        text-align: center;
+        color: #d7b359;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .footerbar .button .icon {
+        margin-left: 10px;
+    }
+    .location ion-select {
+        max-width: 70%;
+        padding-right: 4px !important;
+        color: #d7b359;
+    }
+
+
+
+
+
+
+
+}

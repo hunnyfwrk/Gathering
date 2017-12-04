@@ -1,0 +1,74 @@
+<ion-header class="main_header">
+    <ion-navbar>
+      <ion-title>{{ 'account' | translate }}</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  
+  <ion-content style="background: url(assets/image/bg.jpg);background-size: cover;background-repeat: no-repeat;">
+  
+    <div class="user">
+        <img *ngIf='this?.srcImage == null' src="assets/image/user.png" (click)='CameraAction()' >
+        <img *ngIf='this?.srcImage != null' [src]="this?.srcImage" (click)='CameraAction()' >
+        <!--<span class="edt"><ion-icon ios="ios-create" md="md-create" (click)='CameraAction()'></ion-icon></span>-->
+        <h2>{{firstname}}</h2>
+
+        <div class="two_box">
+            <ul>
+              <li><a (click)="aboutorder()"><ion-icon ios="ios-clipboard" md="md-clipboard" class="icn"></ion-icon>
+              <span>{{ 'myorders' | translate}}</span>
+              </a></li>
+              <li><a (click)="notification()"><ion-icon ios="ios-notifications" md="md-notifications" class="icn"><sup class="star0">*</sup></ion-icon>
+                <span> {{ 'notifications' | translate}} </span>
+                </a></li>
+            </ul>
+          </div>
+      </div>
+      
+      <div class="padding10">
+
+      <div class="list_box">
+          
+            <ion-list>
+
+                 <button ion-item (click)="chat()">
+                <ion-icon ios="ios-chatbubbles" md="md-chatbubbles" class="service_icn"></ion-icon>{{ 'mychat' | translate}}<ion-icon ios="ios-arrow-forward" md="md-arrow-forward" class="angle1"></ion-icon>
+            </button> 
+
+
+              <button ion-item (click)="profile()">
+              <ion-icon ios="ios-contact" md="md-contact" class="service_icn"></ion-icon> {{ 'myprofile' | translate}}<ion-icon ios="ios-arrow-forward" md="md-arrow-forward" class="angle1"></ion-icon>
+              </button>  
+          
+            <button ion-item (click)="decoration1()">
+                  <ion-icon ios="ios-pin" md="md-pin" class="service_icn"></ion-icon> {{ 'location' | translate}}<ion-icon ios="ios-arrow-forward" md="md-arrow-forward" class="angle1"></ion-icon>
+            </button>  
+
+            <button ion-item (click)="contact()">
+                <ion-icon ios="ios-call" md="md-call" class="service_icn"></ion-icon>{{ 'contactus' | translate}}<ion-icon ios="ios-arrow-forward" md="md-arrow-forward" class="angle1"></ion-icon>
+            </button> 
+
+            <button ion-item (click)="history()">
+                <ion-icon ios="ios-timer-outline" md="md-timer" class="service_icn"></ion-icon>{{ 'history' | translate}}<ion-icon ios="ios-arrow-forward" md="md-arrow-forward" class="angle1"></ion-icon>
+                </button> 
+
+                <button ion-item>
+                <ion-icon ios="ios-star-outline" md="md-star" class="service_icn"></ion-icon>Rate This App<ion-icon ios="ios-arrow-forward" md="md-arrow-forward" class="angle1"></ion-icon>
+                </button> 
+
+            <button ion-item (click)="ChangePasswordpage()">
+                <ion-icon ios="ios-lock" md="md-lock" class="service_icn"></ion-icon> {{ 'changepass' | translate}}<ion-icon ios="ios-arrow-forward" md="md-arrow-forward" class="angle1"></ion-icon>
+            </button> 
+             <button ion-item (click)="logout()">
+                <ion-icon ios="ios-lock" md="md-lock" class="service_icn"></ion-icon> {{ 'logout' | translate}}<ion-icon ios="ios-arrow-forward" md="md-arrow-forward" class="angle1"></ion-icon>
+            </button> 
+  
+          </ion-list>
+          
+          </div>
+          </div>
+    
+   
+   
+
+</ion-content>

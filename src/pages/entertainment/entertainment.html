@@ -1,0 +1,54 @@
+<ion-header class="main_header">
+  <ion-navbar>
+
+    <ion-title *ngIf='lang == "en"'>{{category_name}}</ion-title>
+    <ion-title *ngIf='lang == "ar"'>{{category_ar_name}}</ion-title>
+    
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding style="background: url(assets/image/bg.jpg);background-size: cover;background-repeat: no-repeat;">
+
+<div class="card_box">
+
+  <ion-card *ngFor='let sub of subcategories'>
+    <ion-card-content (click)="productsPage(sub._id,sub.name,sub.ar_name)">
+        <div class="pick">
+            <img [src]="sub.image">
+            </div>
+     <span *ngIf='lang == "en"'>  {{sub.name}}  </span>
+     <span *ngIf='lang == "ar"'>  {{sub.ar_name}}  </span>
+    </ion-card-content>
+  </ion-card>
+
+  <!--<ion-card>
+    <ion-card-content>
+        <div class="pick">
+            <img src="assets/image/10.png">
+            </div>
+    <span> Clowns</span>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+      <div class="pick">
+        <img src="assets/image/10.png">
+        </div>
+        <span> Clowns</span>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+        <div class="pick">
+            <img src="assets/image/11.png" style="width: 32px;float: none; margin: auto;">
+            </div>
+     <span>Traditional Dancers</span>
+    </ion-card-content>
+  </ion-card>-->
+
+  </div>
+
+</ion-content>

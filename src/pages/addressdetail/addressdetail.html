@@ -1,0 +1,35 @@
+<ion-header class="main_header">
+  <ion-navbar>
+    <!--<button ion-button class="back" (click)="cart()">
+      <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+    </button>-->
+
+    <ion-title>Address Detail</ion-title>
+    
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content *ngIf="this?.addrs" padding style="background: url(assets/image/bg.jpg);background-size: cover;background-repeat: no-repeat;">
+
+<div class="detail">
+  <h3>{{addrs.fname}} {{addrs.lname}}</h3>
+  <p>{{addrs.address}}</p>
+  <p>{{addrs.street}}, {{addrs.city}}, {{addrs.country}}</p>
+  <p>{{addrs.mobileno}}</p>
+</div>
+
+<div class="button0">
+  <ion-grid style="padding:0px;">
+    <ion-row>
+      <ion-col col-6 style="padding-left:0px;"><button ion-button (click)="viewall()">View all</button></ion-col>
+      <ion-col col-6 style="padding-right:0px;" (click)="enterdetail()"><button ion-button>Add new</button></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12 style="padding-right:0px;" (click)="orderreview(addrs._id)"><button ion-button>Order Review</button></ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+
+
+</ion-content>

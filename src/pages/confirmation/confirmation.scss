@@ -1,0 +1,85 @@
+page-confirmation {
+
+    .logo_box {
+        width: 100%;
+        float: left;
+    }
+    .logo_box img {
+        width: 60%;
+        float: none;
+        display: block;
+        margin: auto;
+    }
+    .order_number {
+        margin: 5px 0;
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+    .back span{
+        font-size: 16px;
+    }
+    .back{
+        width:44px;
+    }
+    
+    .order_number span {
+        width: 100%;
+        float: left;
+        color: #41444b;
+        font-size: 15px;
+    }
+    
+    .order_number h3 {
+        width: 100%;
+        float: left;
+        font-size: 25px;
+        margin: 0;
+        color: #41444b;
+    }
+    
+    .payment_conplete {
+        width: 100%;
+        float: left;
+        text-align: center;
+        margin: 15px 0 0 0;
+    }
+    
+    .payment_conplete h2 {
+        width: 100%;
+        float: left;
+        text-align: center;
+        color: #d7b359;
+        font-size: 32px;
+        font-family: Raleway-Medium;
+    }
+    
+    .payment_conplete h5 {
+        width: 100%;
+        float: left;
+        color: #41444b;
+        margin: 0 0 10px 0;
+    }
+    
+    .payment_conplete span {
+        width: 100px;
+        height: 100px;
+        background: rgba(146, 138, 138, 0.05);
+        padding: 10px;
+        border-radius: 50px;
+        border: 1px solid #d7b359;
+        float: left;
+    }
+    .center {
+        width: 30%;
+        float: none;
+        margin: auto;
+    }
+    .payment_conplete p {
+        width: 100%;
+        float: left;
+        color: #41444b;
+        font-size: 15px;
+    }
+ 
+}

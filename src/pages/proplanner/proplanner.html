@@ -1,0 +1,23 @@
+<ion-header class="main_header">
+    
+      <ion-navbar>
+    
+        <ion-title>{{ 'pro_event_planner' | translate}}</ion-title>
+
+      </ion-navbar>
+    
+    </ion-header>
+    
+    <ion-content padding style="background: url(assets/image/bg.jpg);background-size: cover;background-repeat: no-repeat;">
+    
+      <div class="spacer" style="height:26vh;float:left;width:100%;"></div>
+      
+        <div class="professional_event_btn">
+      
+          <button (click)="individualplanner()" ion-button>{{ 'indiv_planner' | translate}}</button>
+      
+          <button (click)="eventcompanies()" ion-button>{{'event_company' | translate}}</button>
+      
+        </div>
+
+</ion-content>

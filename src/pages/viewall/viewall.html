@@ -1,0 +1,35 @@
+<ion-header class="main_header">
+    <ion-navbar>
+  
+      <ion-title>Change Address</ion-title>
+      
+    </ion-navbar>
+  </ion-header>
+  
+  
+  <ion-content padding style="background: url(assets/image/bg.jpg);background-size: cover;background-repeat: no-repeat;">
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+    <ion-list radio-group>
+      
+        <div class="detail" *ngFor="let addrs of addresses">
+            <h3>{{addrs.fname}} {{addrs.lname}}</h3> <button ion-button class="edit" (click)="edit(addrs._id)">Edit</button>
+            <p>{{addrs.address}}</p>
+            <p>{{addrs.street}}, {{addrs.city}}, {{addrs.country}}</p>
+            <p>{{addrs.mobileno}}</p>
+          <ion-item>
+              <ion-radio [value]="addrs._id" (ionSelect)="review(addrs._id)"></ion-radio>
+        </ion-item>
+      </div>
+    </ion-list>
+
+    <div class="button0">
+        <ion-grid style="padding:0px;">
+          <ion-row>
+            <ion-col col-12 style="padding-left:0px;"><button ion-button (click)="enterdetail()">Add new address</button></ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+
+</ion-content>

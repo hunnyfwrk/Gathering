@@ -1,0 +1,35 @@
+<ion-header class="main_header">
+  <ion-navbar>
+  
+    <ion-title>Raiting</ion-title>
+    
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding style="background: url(assets/image/bg.jpg);background-size: cover;background-repeat: no-repeat;">
+
+  <div class="raiting">
+    <p>How do you like this product?</p>
+    <ion-list class="select01">
+        <ion-item>
+          <ion-label style="color:#d7b359;text-align:left;">Raiting:</ion-label>
+          <ion-select [(ngModel)]="gaming" class="gameing">
+            <ion-option value="1">1</ion-option>
+            <ion-option value="2">2</ion-option>
+            <ion-option value="3">3</ion-option>
+            <ion-option value="4">4</ion-option>
+            <ion-option value="5">5</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+      <div class="button0">
+        <ion-grid style="padding:0px;">
+            <ion-col col-12 style="padding-right:0px;" (click)="history()"><button ion-button>Submit</button></ion-col>
+        </ion-grid>
+      </div>
+
+  </div>
+
+</ion-content>

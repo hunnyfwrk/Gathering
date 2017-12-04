@@ -1,0 +1,136 @@
+<ion-header class="main_header">
+
+  <ion-navbar>
+
+    <ion-title> {{ 'signup' | translate}}</ion-title>
+
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding style="background: url(assets/image/bg.jpg);background-size: cover;background-repeat: no-repeat;">
+
+  <div class="signup_box">
+    <form #signupForm="ngForm" novalidate>
+      <ion-list>
+
+        <!-- <ion-label stacked>Name</ion-label> -->
+        <ion-item style="border:1px solid #d7b359 !important;">
+          <ion-input type="text" placeholder="{{ 'name' | translate}}" [(ngModel)]="data.name" pattern='[a-zA-Z ]*' name="name" #name="ngModel" required></ion-input>
+        </ion-item>
+        <ion-label color="danger" class="alert01">
+          <div *ngIf="name.errors && (name.dirty || name.touched)">
+            <div [hidden]="!name.errors.required">
+              Name is required
+            </div>
+            <div [hidden]="!name.errors.pattern">
+              Invalid name
+            </div>
+          </div>
+        </ion-label>
+        <!-- <ion-label stacked>Phone Number</ion-label> -->
+        <ion-item>
+          <ion-input type="text" placeholder="{{ 'phone_number' | translate}}" [(ngModel)]="data.number" name="number" pattern='[0-9]+' maxlength='10'
+            #number="ngModel" required></ion-input>
+        </ion-item>
+        <ion-label color="danger" class="alert01">
+          <div *ngIf="number.errors && (number.dirty || number.touched)">
+            <div [hidden]="!number.errors.required">
+              Phone Number is required
+            </div>
+            <div [hidden]="!number.errors.pattern">
+              Invalid phone number
+            </div>
+          </div>
+        </ion-label>
+
+        <!-- <ion-label stacked>Email</ion-label> -->
+        <ion-item>
+          <ion-input type="text" placeholder="{{ 'email' | translate }}" [(ngModel)]="data.email" required pattern='^[A-Za-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$'
+            name='email' #email="ngModel"></ion-input>
+        </ion-item>
+        <ion-label color="danger" class="alert01">
+          <div *ngIf="email.errors && (email.dirty || email.touched)">
+            <div [hidden]="!email.errors.required">
+              E-mail is required
+            </div>
+            <div [hidden]="!email.errors.pattern">
+              Invalid E-mail
+            </div>
+          </div>
+        </ion-label>
+
+        <!-- <ion-label stacked>Password</ion-label> -->
+        <ion-item>
+          <ion-input type="password" placeholder="{{ 'pass' | translate }}" [(ngModel)]="data.password" name="password" minlength='6' #password="ngModel"
+            required></ion-input>
+        </ion-item>
+        <ion-label color="danger" class="alert01">
+          <div *ngIf="password.errors && (password.dirty || password.touched)">
+            <div [hidden]="!password.errors.required">
+              Password is required
+            </div>
+            <div [hidden]="!password.errors.minlength">
+              Minimum length should be 6
+            </div>
+          </div>
+        </ion-label>
+        <!-- <ion-label stacked>Confirm Password</ion-label> -->
+        <ion-item>
+          <ion-input type="password" placeholder="{{ 'confirm_pass' | translate}}" [(ngModel)]="data.cpassword" name="cpassword" #cpassword="ngModel"
+            required></ion-input>
+        </ion-item>
+        <ion-label color="danger" class="alert01">
+          <div *ngIf="cpassword.errors && (cpassword.dirty || cpassword.touched)">
+            <div [hidden]="!cpassword.errors.required">
+              Please confirm your password
+            </div>
+            <div [hidden]="!cpassword.errors.minlength">
+              Minimum length should be 6
+            </div>
+          </div>
+        </ion-label>
+        <div class="male_box">
+            <ion-list radio-group [(ngModel)]="data.gender" name="gender" #gender="ngModel">
+              <ion-item style="border-right:none;">
+                <ion-label>{{ 'male' | translate }}</ion-label>
+                <ion-radio checked="true" value="male"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>{{ 'female' | translate }}</ion-label>
+                <ion-radio value="female"></ion-radio>
+              </ion-item>
+            </ion-list>
+         </div>
+        <!--<ion-label color="danger">
+          <div *ngIf="gender.errors && (gender.dirty || gender.touched)">
+            <div [hidden]="!gender.errors.required">
+              Please confirm your password
+            </div>
+            <div [hidden]="!gender.errors.minlength">
+              Minimum length should be 6
+            </div>
+          </div>
+        </ion-label>-->
+      </ion-list>
+
+      <div class="signup_btn">
+        <ion-grid style="padding: 0;">
+          <ion-row>
+            <ion-col col-4> <button type='button' ion-button (click)='agree(true)' class="{{this?.active}}"> {{ 'Iagree' | translate}}</button></ion-col>
+            <ion-col col-8 (click)="readTerms()"><span>{{ 'terms_n_cond' | translate}}</span></ion-col>
+
+            <div style="height:2vh;float:left;width:100%;"></div>
+            <button type='button' [hidden]='hasAgreed != false'(click)='notAgreed()' [disabled]='!signupForm.valid' ion-button style="height:45px;border-radius:4px;">{{'Join' | translate}}</button>
+            <button type='submit' [hidden]='hasAgreed == false' (click)='register(signupForm)' [disabled]='!signupForm.valid' ion-button style="height:45px;border-radius:4px;">{{'Join' | translate}}</button>
+            <div style="height:4vh;float:left;width:100%;"></div>
+
+          </ion-row>
+        </ion-grid>
+      </div>
+
+    </form>
+
+  </div>
+
+</ion-content>

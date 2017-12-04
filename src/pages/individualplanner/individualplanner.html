@@ -1,0 +1,110 @@
+<ion-header class="main_header">
+    <ion-navbar>
+  
+      <ion-title> {{ 'indiv_planner' | translate}}</ion-title>
+
+      <ion-buttons end>
+      <button ion-button class="back" (click)="showsearch(searchbars)">
+        <ion-icon ios="ios-search" md="md-search"></ion-icon>
+      </button>
+      </ion-buttons>
+
+      
+    </ion-navbar>
+
+     <ion-toolbar class="tabing" *ngIf="searchbars == true;" >
+     <form [formGroup]="search" (ngSubmit)="getItems(searchterm.search)">
+        <ion-searchbar [(ngModel)]="searchterm.search" (ionInput)="getItems(searchterm.search)" formControlName="search"></ion-searchbar>
+    </form>
+  </ion-toolbar>
+
+  </ion-header>
+  
+  
+  <ion-content padding style="background: url(assets/image/bg.jpg);background-size: cover;background-repeat: no-repeat;">
+  
+  <div class="card_box" *ngIf="this?.planners">
+  
+    <ion-card *ngFor="let users of planners">
+      <ion-card-content>
+          <div class="pick">
+              <img [src]="users.image">
+              </div>
+      <div class="content01"> <span>{{users.org_name}}</span>
+       <div class="raiting">
+          <ul>
+            <li><ion-icon ios="ios-star-outline" md="md-star-outline"></ion-icon></li>
+            <li><ion-icon ios="ios-star-outline" md="md-star-outline"></ion-icon></li>
+            <li><ion-icon ios="ios-star-outline" md="md-star-outline"></ion-icon></li>
+            <li><ion-icon ios="ios-star-outline" md="md-star-outline"></ion-icon></li>
+            <li><ion-icon ios="ios-star-outline" md="md-star-outline"></ion-icon></li>
+            <!--<ion-rating [numStars]="5" [readOnly]="true" [value]="1" ></ion-rating>-->
+          </ul>
+        </div>
+      </div>
+      </ion-card-content>
+    </ion-card>
+      <ion-card *ngIf="planners.length == 0" >
+      <ion-card-content>
+          <span style="margin: 20px 0;"> {{'no_results' | translate}} </span>
+      </ion-card-content>
+      </ion-card>
+  
+    <!--<ion-card>
+      <ion-card-content>
+          <div class="pick">
+              <img src="assets/image/17.png">
+              </div>
+      <span>Haifa's Art</span>
+      <div class="raiting">
+          <ul>
+            <li><ion-icon ios="ios-star" md="md-star"></ion-icon></li>
+            <li><ion-icon ios="ios-star" md="md-star"></ion-icon></li>
+            <li><ion-icon ios="ios-star-outline" md="md-star-outline"></ion-icon></li>
+            <li><ion-icon ios="ios-star-outline" md="md-star-outline"></ion-icon></li>
+            <li><ion-icon ios="ios-star-outline" md="md-star-outline"></ion-icon></li>
+          </ul>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  
+    <ion-card>
+      <ion-card-content>
+        <div class="pick">
+          <img src="assets/image/18.png">
+          </div>
+          <span>MJ's Events</span>
+          <div class="raiting">
+              <ul>
+                <li><ion-icon ios="ios-star" md="md-star"></ion-icon></li>
+                <li><ion-icon ios="ios-star" md="md-star"></ion-icon></li>
+                <li><ion-icon ios="ios-star" md="md-star"></ion-icon></li>
+                <li><ion-icon ios="ios-star" md="md-star"></ion-icon></li>
+                <li><ion-icon ios="ios-star" md="md-star"></ion-icon></li>
+              </ul>
+            </div>
+      </ion-card-content>
+    </ion-card>
+  
+    <ion-card>
+      <ion-card-content>
+          <div class="pick">
+              <img src="assets/image/19.png">
+              </div>
+       <span>Manal Organizer</span>
+       <div class="raiting">
+          <ul>
+            <li><ion-icon ios="ios-star" md="md-star"></ion-icon></li>
+            <li><ion-icon ios="ios-star" md="md-star"></ion-icon></li>
+            <li><ion-icon ios="ios-star" md="md-star"></ion-icon></li>
+            <li><ion-icon ios="ios-star" md="md-star"></ion-icon></li>
+            <li><ion-icon ios="ios-star" md="md-star"></ion-icon></li>
+          </ul>
+        </div>
+      </ion-card-content>
+    </ion-card>-->
+  
+    </div>
+  
+  </ion-content>
+  

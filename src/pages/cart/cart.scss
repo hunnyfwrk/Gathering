@@ -1,0 +1,210 @@
+page-cart {
+
+    .wishlist_box .list-ios > .item-block:first-child,.wishlist_box .list-ios .item-block .item-inner,.wishlist_box .list-ios > .item-block:last-child, .list-ios > .item-wrapper:last-child .item-block {
+        border-top: none;
+        border-bottom: none;
+    }
+    .wishlist_box ion-thumbnail {
+        margin: 8px 10px 8px 0 !important;
+        width: 87px;
+        height: 56px;
+        overflow: hidden;
+    }
+    
+    .wishlist_box ion-thumbnail img {
+        width: 100%;
+        height: auto;
+    }
+
+    .plus_min {
+        width: 60%;
+        float: left;
+        border-radius: 4px;
+        overflow: hidden;
+        border: 1px solid #dab966;
+    }
+    
+    .wishlist_box {
+        width: 100%;
+        float: left;
+    }
+    
+    .wishlist_box .item.item-block.item-ios {
+        background: rgba(146, 138, 138, 0.05);
+        margin-bottom: 10px;
+        border-radius: 4px;
+        border: 1px solid #d7b359;
+        padding-left: 7px;
+    }
+    .wbox{
+        float: left;
+        width: 100%;
+        position: relative;
+    }  
+   .close {
+        width: auto;
+        position: absolute;
+        top: -4px;
+        right: -1px;
+        color: #474a51;
+        z-index: 999;
+        background: transparent;
+        padding: 5px;
+        font-size: 20px;
+    }
+    .wbox{
+        background: rgba(146, 138, 138, 0.05);
+        margin-bottom: 10px;
+        border-radius: 4px;
+        border: 1px solid #d7b359;
+        padding-left: 7px;
+        width: 100%;
+        float: left;
+}
+
+.wbox h2 {
+    font-weight: 500;
+    color: #d7b359;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 6px 0 0 0;
+    font-size: 16px;
+    width: 100%;
+    float: left;
+            }
+.wbox p {
+          white-space: normal;
+                font-size: 13px;
+                margin: 0 !important;
+}    
+.content11 {
+    width: 63%;
+    float: right;
+    padding: 10px;
+    padding-left: 0;
+}        
+.wbox ion-thumbnail {
+                margin: 8px 10px 8px 0 !important;
+                width: 87px;
+                height: 56px;
+                overflow: hidden;
+                min-width: 56px;
+                min-height: 56px;
+                float: left;
+            }                
+    .price{
+        margin: 0px !important;
+        color: #d7b359;
+    }
+    .wishlist_box .label h2 {
+        font-weight: 500;
+        color: #d7b359;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+    
+    .wishlist_box .label p {
+        white-space: normal;
+        font-size: 13px;
+    }
+
+    .order_input {
+        width: 100%;
+        float: left;
+    }
+    .order_box {
+        width: 100%;
+        float: left;
+    }
+    .position{
+        position: relative;
+        padding-right: 30px;
+    }
+   .location {
+        color: #dab966;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: 1;
+        right: 8px;
+        font-size: 23px;
+        height: 22px;
+    }
+    .min {
+        width: 30%;
+        float: left;
+    }
+    
+    .quantity_input {
+        width: 40%;
+        float: left;
+        background: rgba(146, 138, 138, 0.05);
+        height: 30px;
+    }
+    
+    .plus {
+        width:30%;
+        float: left;
+    }
+    .text-input-md {
+        margin: 9px 8px;
+        text-align: center;
+    }
+    
+    .min .button,.plus .button {
+        margin: 0;
+        width: 100%;
+        float: left;
+        border-radius: 0;
+        height: 30px;
+        background-color: #dab966;
+        padding: 0 5px;
+        color: #fff;
+    }
+    
+    .quantity_input input.text-input.text-input-ios {
+        margin:0 !important;
+        width: 100%;
+        text-align: center;
+        padding: 0 10px;
+        height: 30px;
+    }
+    .main_box{
+        border: 1px solid #dab966;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    .wishlist_box h6 {
+        width: 100%;
+        float: left;
+        font-size: 13px;
+        color: #dab966;
+    }
+    .last_btn {
+        width:100%;
+        float: left;
+        margin: auto;
+        background: #d7b359;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+    
+    .last_btn .button {
+        width: 100%;
+        float: left;
+        border-right: 2px solid #fff;
+        border-radius: 0;
+        color: #111;
+        font-weight: 500;
+    }
+    .rr{
+        border-right:0px !important;
+    }
+    .center1{
+        width: 70%;
+        float: none;
+        margin: auto;
+    }
+
+}

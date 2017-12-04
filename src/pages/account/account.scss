@@ -1,0 +1,173 @@
+page-account {
+
+    .user {
+        width: 100%;
+        margin: auto;
+        float: none;
+        padding-bottom: 90px;
+        background: transparent;
+        position: relative;
+        box-shadow: 0 0 20px #ddd;
+        padding-top: 20px;
+        position: relative;
+    }
+    .main_header .toolbar-title-md{
+        width:100%;
+    }
+
+    .edt {
+    position: absolute;
+    top: 111px;
+    right: 125px;
+    border:1px solid #d7b359;
+    border-radius: 50%;
+    padding: 4px 6px;
+    background: #fff;
+    color:#d7b359;
+}
+    
+    .user img {
+        width: 20%;
+        margin: auto;
+        float: none;
+        display: block;
+    }
+    
+    .user h2 {
+        width: 100%;
+        float: left;
+        font-size: 18px;
+        text-align: center;
+        color: #d7b359;
+        font-weight: 600;
+    }
+    .two_box {
+        width: 90%;
+        position: absolute;
+        bottom: -36px;
+        background: #fff;
+        margin: auto;
+        left: 0;
+        right: 0;
+        border-radius: 4px;
+        box-shadow: 0 2px 14px #ddd;
+    }
+    
+    .two_box ul {
+        width: 100%;
+        float: left;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .two_box ul li {
+        width: 50%;
+        float: left;
+        text-align: center;
+    }
+    
+    .two_box ul li a {
+        width: 100%;
+        float: left;
+        padding: 10px;
+        cursor: pointer;
+        color: #d7b359;
+    }
+    
+    .icn {
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-size: 30px;
+        position: relative;
+    }
+.star0 {
+    position: absolute;
+    top: -30px;
+    right: -20px;
+    left: 0;
+    margin: auto;
+    z-index: 999;
+    bottom: 0;
+    width: 20px;
+    color: #d10b0b;
+    height: 16px;
+    line-height: normal !important;
+}
+    
+    .two_box ul li span {
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 5px;
+    }
+    .list_box {
+        width: 100%;
+        float: left;
+        margin: 60px 0 10px 0;
+    }
+    .padding10{
+        padding: 15px;
+    }
+    
+    .list_box .list .item:first-child {
+        border-top: none;
+    }
+    .list_box .label{
+        color: #d7b359;
+    }
+    
+    .list_box .item {
+        background: #fff;
+        margin-bottom: 5px;
+    }
+   .list_box .list-ios > .item-block:first-child,.list_box .list-ios > .item-block:last-child  {
+        border-top: 1px solid #dab966 !important;
+        border-bottom: 1px solid #dab966 !important;
+    }
+    .list_box .item {
+        background:rgba(146, 138, 138, 0.05);
+        margin-bottom: 5px;
+        border: 1px solid #dab966 !important;
+        border-radius: 3px;
+        font-size: 15px;
+    }
+    .list-md .item-block .item-inner {
+        border:none;
+    }
+    .list_box .list-ios .item-block .item-inner{
+        border-bottom: none;
+    }
+    .item-ios[detail-push] .item-inner, button.item-ios:not([detail-none]) .item-inner, a.item-ios:not([detail-none]) .item-inner {
+        background-image: none;
+    }
+    .angle1 {
+        position: absolute;
+        right: 10px;
+        font-size: 24px;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: 22px;
+    }
+    .list_box .list .item{
+        padding-left: 45px;
+    }
+    .service_icn {
+        width: 25px;
+        left: 12px;
+        margin-right: 8px;
+        position: absolute;
+        top: 0;
+        font-size: 28px;
+        height: 28px !important;
+        bottom: 0;
+        height: auto;
+        margin: auto;
+    }
+    
+
+}

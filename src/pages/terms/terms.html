@@ -1,0 +1,21 @@
+<ion-header class="main_header">
+  <ion-navbar>
+    <!-- <button ion-button class="back" (click)="goback();">
+        <ion-icon ios="ios-arrow-back" md="md-arrow-back" ></ion-icon>
+      </button> -->
+
+    <ion-title>{{ 'terms_n_cond' | translate}}</ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding style="background: url(assets/image/bg.jpg);background-size: cover;background-repeat: no-repeat;">
+
+  <div class="spacer" style="height:10vh;float:left;width:100%;"></div>
+  <span class="heading" *ngIf='lang == "en"' [innerHTML]='this?.terms'></span>
+  <span class="heading" *ngIf='lang == "ar"' [innerHTML]='this?.ar_terms'></span>
+
+  <div class="email_box">
+  </div>
+</ion-content>

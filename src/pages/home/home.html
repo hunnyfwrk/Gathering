@@ -1,0 +1,62 @@
+<ion-header class="main_header">
+
+  <ion-navbar>
+
+    <ion-title>{{ 'HOME' | translate }}</ion-title>
+
+    <!--<button ion-button end class="back" style="float:right;">
+      <ion-icon ios="ios-search" md="md-search"></ion-icon>
+    </button>-->
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content no-scroll scroll="false" style="background: url(assets/image/bg.jpg);background-size: cover;background-repeat: no-repeat;">
+
+
+
+  <div class="home_box">
+
+    <!-- <ion-slide style="background:url(assets/image/pick.png);"> -->
+
+    <div class="boxs" *ngIf="this?.trending">
+      <span style="color:#fff;text-shadow:0px 1px 6px #000;width:30%;">{{ 'trending' | translate }}</span>
+      <ion-slides pager>
+
+        <ion-slide *ngFor="let prod of trending" style="background-size:cover;width:100%;">
+          <img [src]="prod.image" (click)="productDetails(prod._id)">
+        </ion-slide>
+
+        <ion-slide style="background-size:cover;width:100%;">
+          <!--background:url(assets/image/pick2.png);-->
+          <img src="assets/image/pick2.png">
+        </ion-slide>
+
+      </ion-slides>
+    </div>
+
+    <div class="boxs" style="background: url(assets/image/27.jpg);width: 100%;height: 100%;float: left;background-position: center;">
+     <div class="overlay"></div>
+      <span style="height:60px;">{{ 'plan_your_event' | translate }}
+        <form class="date_format">
+         <!-- <input type="date" placeholder="dd/mm/yyyy"> -->
+         <ion-item>
+          <ion-datetime displayFormat="MM/DD/YYYY" max="2050-12-31" placeholder="mm/dd/yyyy" pickerFormat="MMM-DD-YYYY" [(ngModel)]="myDate" min="{{currentdate}}" [ngModelOptions]="{standalone: true}" (ionChange)="getDate()"></ion-datetime>
+        </ion-item>
+        </form>
+      </span>
+    </div>
+
+    <div class="boxs" (click)="service()" style="background: url(assets/image/28.jpg);width: 100%;height: 100%;float: left;background-position: center;">
+      <div class="overlay"></div>
+      <span>{{ 'make_ur_own' | translate }}</span>
+    </div>
+
+    <div class="boxs" (click)="proplanner()"  style="background: url(assets/image/29.jpg);width: 100%;height: 100%;float: left;background-position: center;">
+      <div class="overlay"></div>
+      <span>{{ 'pro_event_planner'| translate}}</span>
+    </div>
+
+  </div>
+
+</ion-content>

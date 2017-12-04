@@ -1,0 +1,118 @@
+page-signup {
+
+    .signup_box .list-ios > .item-block:first-child,.signup_box .list-ios .item-block .item-inner,.signup_box .list-ios > .item-block:last-child,.signup_box .list-ios > .item-wrapper:last-child .item-block{
+        border: none;
+    }
+    .list-md .item-block .item-inner {
+        border:none;
+    }
+    .signup_box .list .item {
+        margin: 0;
+        padding: 0 15px;
+        border: 1px solid #d7b359;
+        border-radius: 4px;
+        background: rgba(146, 138, 138, 0.05);
+        margin-bottom: 15px;
+    }
+    .signup_box{
+        width:100%;
+        float: left;
+    }
+    .signup_box .label.label-ios {
+        color: #d7b359;
+        font-size: 15px;
+        margin: 0;
+    }
+    .signin_box .button {
+        width: 100%;
+        float: left;
+        margin-bottom: 15px;
+        background: #d7b359;
+    }
+    .signup_btn {
+        width: 100%;
+        float: left;
+    }
+    
+    .signup_btn span {
+        width: 100%;
+        float: left;
+        font-size: 15px;
+        color: #d7b359;
+        line-height:43px;
+    }
+    .item-input .label-md, .item-select .label-md, .item-datetime .label-md {
+        color: #d7b359;
+    }
+    .label-md{
+        margin: 0px;
+    }
+    
+    .signup_btn .button span {
+        color: #d7b359;
+    }
+    
+    .signup_btn .button {
+        background: #d7b359 !important;
+        width:100%;
+        float:left;
+        height: 35px;
+        box-shadow: none;
+        text-transform:capitalize;
+        border-radius: 4px;
+    }
+    .signup_btn .button span{
+        color: #fff;
+    }
+    .list-ios{
+        margin-bottom: 0;
+    }
+    .male_box {
+    width: 100%;
+    float: left;
+    border: 1px solid #d7b359;
+    border-radius: 4px;
+}
+
+.male_box > .list > .item {
+    width: 50%;
+    float: left;
+    border-radius: 0px;
+    border: none;
+    margin: 0;
+}
+.male_box > .list > .item:first-child {
+    border-right: 1px solid #d7b359 !important;
+}
+.item-radio-checked.item-md ion-label,.label-md  {
+    color: #d7b359;
+}
+.radio-md .radio-checked,.radio-md .radio-icon,.radio-ios .radio-checked .radio-inner {
+    border-color: #d7b359;
+}
+.radio-md .radio-inner{
+    background-color: #d7b359;
+}
+.alert01 {
+    width: 100%;
+    float: left;
+    padding-bottom: 12px;
+}
+.alert01{
+    color: #f53d3d !important;
+}
+
+.signup_btn button {
+    background: #d7b359;
+}
+
+.signup_btn button span {
+    color: #fff !important;
+}
+
+.active {
+    background: #c39625 !important;
+    color: #fff;
+}
+
+}

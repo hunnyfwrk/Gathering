@@ -1,0 +1,37 @@
+<ion-header class="main_header">
+  <ion-navbar>
+    <button [hidden]="this.products.length == 0" ion-button class="back" (click)="edit(test_to_show)">
+      {{test_to_show}}
+    </button>
+    
+
+    <ion-title> {{ 'wishlist' | translate }}</ion-title>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding style="background: url(assets/image/bg.jpg);background-size: cover;background-repeat: no-repeat;">
+
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+  <div class="wishlist_box">
+  <ion-list>
+    <div class="close_box" *ngFor="let prod of products">
+      <ion-icon *ngIf="showOption == '1'" class="close" ios="ios-close-circle" md="md-close-circle" (click)="removeItem(prod.wishlistid)"></ion-icon>
+      <ion-item>
+        <ion-thumbnail item-start >
+          <img [src]="prod.image">
+        </ion-thumbnail>
+        <h2 *ngIf='lang == "en"'> {{ prod.name }}</h2>
+        <h2 *ngIf='lang == "ar"'> {{ prod.ar_name }}</h2>
+        <p *ngIf='lang == "en"'>{{ prod.description }}</p>
+        <p *ngIf='lang == "ar"'>{{ prod.ar_description }}</p>
+        <button ion-button clear item-end class="price" (click)="balloondetail(prod._id)">SR {{ prod.price }}</button>
+      </ion-item>
+    </div>
+  </ion-list>
+  </div>
+
+</ion-content>

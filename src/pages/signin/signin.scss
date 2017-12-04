@@ -1,0 +1,120 @@
+page-signin {
+
+    .sigin_box .list-ios > .item-block:first-child,.signin_box .list-ios .item-block .item-inner,.signin_box .list-ios > .item-block:first-child ,.signin_box .list-ios > .item-block:last-child,.signin_box .list-ios > .item-wrapper:last-child .item-block{
+        border: none;
+    }
+    .signin_box .list .item {
+        margin: 0;
+        padding: 0 15px;
+        border: 1px solid #d7b359 !important;
+        border-radius: 4px;
+        background: rgba(146, 138, 138, 0.05);
+        margin-bottom: 10px;
+    }
+    .signin_box{
+        width:100%;
+        float: left;
+    }
+    .signin_box .list {
+        margin-bottom: 0px;
+    }
+    .signin_box .item-block .item-inner {
+        border: none !important;
+    }
+    .checkbox-ios-dark .checkbox-checked {
+        border-color: #d7b359;
+        background-color: #d7b359;
+    }
+    .checkbox-ios .checkbox-icon {
+        border-color: #d7b359;
+    }
+    .checkbox-ios-dark .checkbox-checked .checkbox-inner {
+        border-color: #fff;
+    }
+    .signin_box .item-checkbox {
+        color: #d7b359;
+        width: 51%;
+        float: none;
+        margin: auto;
+        padding: 0;
+    }
+    .item.item-md .checkbox-md,
+    .item.item-ios .checkbox-ios {
+        margin: 9px 6px 9px 4px;
+    }
+    .signin_box .button {
+        width: 100%;
+        float: left;
+        margin-bottom: 15px;
+        background: #d7b359;
+    }
+    .forgot_box{
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+    
+    .forgot_password {
+        width: 56%;
+        float: none;
+        margin: auto;
+        display: block;
+        color: #d7b359;
+        font-size: 15px;
+    }
+
+    .signup_btn {
+        width: 100%;
+        float: left;
+        margin-top: 20px;
+    }
+    
+    .signup_btn span {
+        width: 100%;
+        float: left;
+        font-size: 15px;
+        color: #d7b359;
+        line-height: 50px;
+    }
+    
+    .signup_btn .button span {
+        color: #d7b359;
+    }
+    
+    .signin_box .button {
+        width: 100%;
+        float: left;
+        margin-bottom: 15px;
+        background: #d7b359;
+        height: 45px;
+        text-transform: capitalize;
+        box-shadow: none;
+        font-size: 17px;
+    
+    }
+    .kya_kru_tera{
+        background: transparent !important;
+        border: 1px solid #d7b359;
+        border-radius: 4px;
+    }
+    
+    .pin_location {
+        width: 15%;
+        float: none;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .checkbox-md-dark .checkbox-checked {
+        border-color: #d7b359;
+        background-color: #d7b359;
+    }
+    .checkbox-md .checkbox-icon{
+        border-color: #d7b359;
+    }
+    
+    // .pin_location .icon {
+    //     font-size: 55px;
+    //     color: #d7b359;
+    // }
+
+}

@@ -1,0 +1,139 @@
+<ion-header class="main_header" *ngIf='this?.product'>
+  <ion-navbar>
+    <ion-title *ngIf='lang == "en"'>{{product.name}}</ion-title>
+    <ion-title *ngIf='lang == "ar"'>{{product.ar_name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<!--<ion-content *ngIf='this?.product' padding style="background: url(assets/image/bg.jpg);background-size: cover;background-repeat: no-repeat;">-->
+
+
+<ion-content *ngIf='this?.product' padding style="background: url(assets/image/bg.jpg);background-size: cover;background-repeat: no-repeat;">
+
+
+  <div class="order_box">
+    <div class="image">
+      <img [src]="product.image">
+    </div>
+    <div class="content1">
+      <div class="raiting">
+        <ul>
+          <li>
+            <ion-icon ios="ios-star" md="md-star"></ion-icon>
+          </li>
+          <li>
+            <ion-icon ios="ios-star" md="md-star"></ion-icon>
+          </li>
+          <li>
+            <ion-icon ios="ios-star" md="md-star"></ion-icon>
+          </li>
+          <li>
+            <ion-icon ios="ios-star" md="md-star"></ion-icon>
+          </li>
+          <li>
+            <ion-icon ios="ios-star" md="md-star"></ion-icon>
+          </li>
+        </ul>
+      </div>
+      <p>{{ 'vendor' | translate}} </p>
+      <p>{{product.vendorname}}</p>
+      <span>{{ 'price' | translate}} : {{product.price}}SR</span>
+    </div>
+    <div class="spacer" style="height: 2vh;float:left;width:100%;"></div>
+
+    <div class="order_input">
+      <form  #orderForm="ngForm" novalidate>
+      <ion-grid style="padding:0px;">
+
+        <ion-row>
+          <ion-col col-4>
+            <div class="label1">Quantity</div>
+          </ion-col>
+          <ion-col col-8>
+            <!-- <div class="input_box">
+                      <ion-input type="date"></ion-input>
+                    </div> -->
+            <div class="main_box">
+
+              <div class="min">
+                <button ion-button small type="button" (click)="decrease()"><ion-icon ios="ios-remove" md="md-remove"></ion-icon></button>
+              </div>
+              <div class="quantity_input">
+                <ion-input type="text" name='qty' [(ngModel)]="data.qty" style="text-align:center;" placeholder="1" #qty='ngModel'></ion-input>
+              </div>
+              <div class="plus">
+                <button ion-button small type="button" (click)="increase()"><ion-icon ios="ios-add" md="md-add"></ion-icon></button>
+              </div>
+
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col col-4>
+            <div class="label1">Time</div>
+          </ion-col>
+          <ion-col col-8>
+            <div class="input_box">
+              <!--<ion-input style="text-align:center;" type="time" placeholder="00:00"></ion-input>-->
+                <ion-datetime displayFormat="h:mm a" [(ngModel)]="data.myTime"  pickerFormat="h:mm a" name='time' (ionChange)="gettime(data.myTime)" required #time="ngModel"> </ion-datetime>
+                 </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-4>
+            <div class="label1">Date</div>
+          </ion-col>
+          <ion-col col-8>
+            <div class="input_box">
+                <ion-datetime displayFormat="MM/DD/YYYY" max="2050-12-31" placeholder="mm/dd/yyyy" [(ngModel)]="data.myDate" name='date' pickerFormat="MMM-DD-YYYY" min="{{currentdate}}" (ionChange)="getdate(data.myDate)" required #date="ngModel"> </ion-datetime>
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col col-4>
+            <div class="label1">Comments</div>
+          </ion-col>
+          <ion-col col-8>
+            <div class="input_box">
+              <ion-input type="text" [(ngModel)]="data.comments" name="comments" placeholder="Ex: No purple balloons" #comments="ngModel"></ion-input>
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col col-4>
+            <div class="label1">Location</div>
+          </ion-col>
+          <ion-col col-8>
+            <div class="input_box position">
+               <ion-input class="location_sss" type="text" name="query" [(ngModel)]="data.query" (input)="updateSearch()" #query="ngModel" required></ion-input>
+              <!--#query="ngModel"-->
+              <ion-icon (click)="getlocation1()" ios="ios-pin" md="md-pin" class="location"></ion-icon>
+            </div>
+            <ion-item *ngFor="let item of autocompleteItems" (click)="chooseItem(item)">{{ item.description }} </ion-item>
+          </ion-col>
+        </ion-row>
+
+         <div class="map" #map id="map"  style="height:20vh;position: initial;float:left;width:100%;"></div> 
+
+      </ion-grid>
+
+      <div class="spacer" style="height: 2vh;float:left;width:100%;"></div>
+
+      <div class="language_btn">
+
+        <button type="submit" (click)="addTocart(orderForm)"  [disabled]='!orderForm.valid' ion-button>Add to cart</button>
+        <!--location()-->
+
+      </div>
+      </form>
+    </div>
+
+    <div style="height:3vh;float:left;width:100%;"></div>
+
+  </div>
+
+</ion-content>

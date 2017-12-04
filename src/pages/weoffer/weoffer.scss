@@ -1,0 +1,40 @@
+page-weoffer {
+
+    .language_btn {
+        width: 100%;
+        float: left;
+        margin-top: 30px;
+      }
+      .language_btn button {
+        width: 65%;
+        border-radius: 4px;
+        margin: auto;
+        float: none;
+        display: block;
+        margin-bottom: 14px;
+        background: #e7cc85;
+        color: #111;
+        text-transform: capitalize;
+        box-shadow: none;
+        height: 44px;
+        font-size: 16px;
+      }
+      .offer {
+        width: 100%;
+        float: left;
+    }
+    .offer form {
+        width: 100%;
+        float: left;
+    }
+    
+    .offer textarea {
+        width: 100%;
+        float: left;
+        background: rgba(146, 138, 138, 0.05);
+        border: 1px solid #d7b359;
+        padding: 8px;
+        border-radius: 4px;
+    }
+
+}

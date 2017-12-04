@@ -1,0 +1,48 @@
+page-knowabout {
+
+    .main_header{
+        box-shadow: none !important;
+    }
+    .main_header .toolbar-background-ios,
+    .main_header .toolbar-background-md {
+        background: rgba(17, 17, 17, 0.44);
+        border: none !important;
+        box-shadow: none !important;
+    }
+    .fixed-content,.scroll-content{
+        margin-top: 0 !important;
+        padding: 0 !important;
+    }
+    .swiper-slide img{
+        width: 100%;
+        float: left;
+    }
+    .back{
+        background: transparent;
+        padding: 0;
+        height: 26px;
+        font-size: 25px;
+    }
+    .detail_box {
+        width: 100%;
+        float: left;
+        height: 185px;
+        overflow: hidden;
+    }
+    .detail_box ion-slides{
+        width: 100%;
+    }
+    .para{
+        width: 100%;
+        float: left;
+        margin-top:20px 
+    }
+    .para p{
+        width:100%;
+        float: left;
+        color: #41444b;
+        margin: 0;
+        text-align: justify;
+    }
+
+}

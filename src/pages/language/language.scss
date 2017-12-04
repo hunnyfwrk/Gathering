@@ -1,0 +1,33 @@
+page-language {
+
+    .logo_box{
+        width:100%;
+        float: left;
+}
+.logo_box img{
+    width:60%;
+    float: none;
+    display: block;
+    margin: auto;
+}
+.language_btn {
+    width: 100%;
+    float: left;
+  }
+  .language_btn button {
+    width: 50%;
+    border-radius: 4px;
+    margin: auto;
+    float: none;
+    display: block;
+    margin-bottom: 14px;
+    background: #e7cc85;
+    color: #111;
+    text-transform: capitalize;
+    box-shadow: none;
+    height: 44px;
+    font-size: 16px;
+  }
+
+
+}

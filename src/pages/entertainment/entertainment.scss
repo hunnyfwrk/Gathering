@@ -1,0 +1,53 @@
+page-entertainment {
+
+    .card_box{
+        width: 100%;
+        float: left;
+    }
+    .card_box .card{
+        margin-bottom: 5px !important;
+        // background: rgba(146, 138, 138, 0.05);
+        // border: 1px solid #dab966 !important;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border-radius: 4px;
+        width: 33.3%;
+        margin: 0;
+        float: left;
+    }
+    .card-content  {
+        padding:0;
+    }
+    .pick{
+    width: 76px;
+    height: 76px;
+    float: none;
+    margin: auto;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #d7b259;
+    padding: 0;
+    position: relative;
+}
+
+.pick img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    height: 100%;
+    border-radius: 50%;
+}
+    .card_box span {
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        color: #d7b259;
+    }
+
+}

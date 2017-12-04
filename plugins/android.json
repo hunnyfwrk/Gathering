@@ -1,0 +1,39 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "io.fwrk.gathering"
+        },
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "io.fwrk.gathering"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "io.fwrk.gathering"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "io.fwrk.gathering"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "io.fwrk.gathering"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "io.fwrk.gathering"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "io.fwrk.gathering"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "io.fwrk.gathering"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "io.fwrk.gathering"
+        }
+    },
+    "dependent_plugins": {}
+}
